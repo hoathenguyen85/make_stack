@@ -8,7 +8,7 @@ let(:empty_stack) {MyStack.new}
 let(:a_stack) {MyStack.new(a_node)}
 
   context '#initialize' do
-    it "is a Stack class" do
+    it "is a MyStack class" do
       expect(empty_stack.instance_of?(MyStack)).to eq(true)
     end
 
