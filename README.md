@@ -12,4 +12,5 @@ Look at the highlighted code at: https://github.com/hoathenguyen85/make_stack/bl
 
 ## step 4 - does push and pop really work? make it count
 Make it O(1)!
+
 Look at the highlighted code at: https://github.com/hoathenguyen85/make_stack/blob/master/stack_spec.rb#L48-L72
