@@ -7,8 +7,9 @@ Look at the highlighted code at: https://github.com/hoathenguyen85/make_stack/bl
 ## step 2 - push it
 Look at the highlighted code at: https://github.com/hoathenguyen85/make_stack/blob/master/stack_spec.rb#L28-L36
 
-## step 1 - pop it
+## step 3 - pop it
 Look at the highlighted code at: https://github.com/hoathenguyen85/make_stack/blob/master/stack_spec.rb#L38-L46
 
-## step 1 - does push and pop really work? make it count
+## step 4 - does push and pop really work? make it count
+Make it O(1)!
 Look at the highlighted code at: https://github.com/hoathenguyen85/make_stack/blob/master/stack_spec.rb#L48-L72
