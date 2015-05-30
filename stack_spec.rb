@@ -22,8 +22,22 @@ let(:a_stack) {MyStack.new(a_node)}
   end
 
   context '#push' do
+    it "is defined" do
+      expect(MyStack.method_defined?(:push)).to eq(true)
+    end
+
     it 'should return node added to stack' do
       expect(empty_stack.push(a_node)).to be(a_node)
+    end
+  end
+
+  context '#pop' do
+    it "is defined" do
+      expect(MyStack.method_defined?(:pop)).to eq(true)
+    end
+
+    it 'should return node removed top of the stack' do
+      expect(a_stack.pop).to be(a_node)
     end
   end
 end
