@@ -19,6 +19,10 @@ let(:a_stack) {MyStack.new(a_node)}
     it "initialized with a node on top" do
       expect(a_stack.top).to_not be_nil
     end
+
+    it "has #top defined" do
+      expect(a_stack.top).to eq(a_node)
+    end
   end
 
   context '#push' do
@@ -38,6 +42,32 @@ let(:a_stack) {MyStack.new(a_node)}
 
     it 'should return node removed top of the stack' do
       expect(a_stack.pop).to be(a_node)
+    end
+  end
+
+  context '#count' do
+    it "is defined" do
+      expect(MyStack.method_defined?(:count)).to eq(true)
+    end
+
+    it 'should be 0 on empty stack' do
+      expect(empty_stack.count).to be(0)
+    end
+
+    it 'should go up 1 from a #push' do
+      empty_stack.push(a_node)
+      expect(empty_stack.count).to be(1)
+    end
+
+    it 'should go up 2 from 2 #push' do
+      empty_stack.push(a_node)
+      empty_stack.push(b_node)
+      expect(empty_stack.count).to be(2)
+    end
+
+    it 'should go down 1 from a #pop' do
+      a_stack.pop
+      expect(a_stack.count).to be(0)
     end
   end
 end
